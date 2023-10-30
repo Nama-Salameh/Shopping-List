@@ -1,0 +1,39 @@
+.itemContainer {
+  margin: 3%;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(104, 103, 103, 0.76);
+}
+.itemImage {
+
+height: 75%;    width: 100%;
+}
+.itemInformationContainer {
+  padding: 4.5% 1%;
+}
+.itemInformationContainer h4,
+.itemInformationContainer p {
+  margin: 1.5%;
+}
+.addToCartButtonContainer {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  padding: 15% !important;
+  width: max-content !important;
+
+
+}
+.addToCartButton {
+  color: black !important;
+  text-transform: none !important;
+  background-color: rgb(255, 255, 255) !important;
+}
+.itemContainer:hover {
+    background-color: rgba(217, 217, 217, 0.574); /* Set a lighter background color on hover */
+  box-shadow: 0 0 20px rgba(104, 103, 103, 0.76); /* Modify the box-shadow on hover */
+
+}
