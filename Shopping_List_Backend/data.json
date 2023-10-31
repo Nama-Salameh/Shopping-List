@@ -1,26 +1,42 @@
 [
   {
-    "itemImage": "../Shopping_List_FrontEnd/src/assets/Coco_chanel_women.png",
-    "itemName": "COCO Chanel women",
+    "itemImage": "assets/Coco_chanel_women.png",
+    "itemName": "COCO Chanel",
     "itemPrice": "400"
   },
   {
-    "itemImage": "../Shopping_List_FrontEnd/src/assets/Sauvage.jpg",
+    "itemImage": "assets/Sauvage.jpg",
     "itemName": "Sauvage Dior",
     "itemPrice": "400"
   },
   {
-    "itemImage": "../Shopping_List_FrontEnd/src/assets/Coco_chanel_men.png",
-    "itemName": "COCO Chanel men",
+    "itemImage": "assets/coco_chanel.jpg",
+    "itemName": "COCO Chanel",
     "itemPrice": "400"
   },
   {
-    "itemImage": "../Shopping_List_FrontEnd/src/assets/The_only_one.jpg",
+    "itemImage": "assets/The_only_one.jpg",
     "itemName": "The Only One",
-    "itemPrice": "400"
-  },  {
-    "itemImage": "../Shopping_List_FrontEnd/src/assets/YSL.jpg",
+    "itemPrice": "109"
+  },
+  {
+    "itemImage": "assets/YSL.jpg",
     "itemName": "YSL",
+    "itemPrice": "150"
+  },
+  {
+    "itemImage": "assets/VERSACE.jpg",
+    "itemName": "VERSACE",
+    "itemPrice": "150"
+  },
+  {
+    "itemImage": "assets/GOLDEA.jpg",
+    "itemName": "GOLDEA",
+    "itemPrice": "150"
+  },
+  {
+    "itemImage": "assets/OLYMPEA.jpg",
+    "itemName": "OLYMPEA",
     "itemPrice": "150"
   }
 ]
