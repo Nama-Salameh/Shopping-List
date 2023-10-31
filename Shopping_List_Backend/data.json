@@ -1,0 +1,26 @@
+[
+  {
+    "itemImage": "../Shopping_List_FrontEnd/src/assets/Coco_chanel_women.png",
+    "itemName": "COCO Chanel women",
+    "itemPrice": "400"
+  },
+  {
+    "itemImage": "../Shopping_List_FrontEnd/src/assets/Sauvage.jpg",
+    "itemName": "Sauvage Dior",
+    "itemPrice": "400"
+  },
+  {
+    "itemImage": "../Shopping_List_FrontEnd/src/assets/Coco_chanel_men.png",
+    "itemName": "COCO Chanel men",
+    "itemPrice": "400"
+  },
+  {
+    "itemImage": "../Shopping_List_FrontEnd/src/assets/The_only_one.jpg",
+    "itemName": "The Only One",
+    "itemPrice": "400"
+  },  {
+    "itemImage": "../Shopping_List_FrontEnd/src/assets/YSL.jpg",
+    "itemName": "YSL",
+    "itemPrice": "150"
+  }
+]
