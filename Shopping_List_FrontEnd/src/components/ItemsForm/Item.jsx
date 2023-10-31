@@ -1,9 +1,10 @@
 import { Grid, Button } from "@mui/material";
 import style from "./Item.module.css";
 import { useState } from "react";
-import sauvageImage from "../../assets/Sauvage.jpg"
-const Item = () => {
+
+const Item = ({item}) => {
   const [isHovered, setIsHovered] = useState(false);
+  const imageUrl = item.image ?? '' ;
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -18,13 +19,13 @@ const Item = () => {
         onMouseLeave={handleMouseLeave}
       >
         <img
-          src={sauvageImage} 
+          src={imageUrl} 
           alt="Perfume item"
           className={style.itemImage}
         />
         <div className={style.itemInformationContainer}>
-          <h4>Suavage Dior</h4>
-          <p>400</p>
+          <h4>{item.name}</h4>
+          <p>{item.price}</p>
         </div>
         {isHovered && (
         <div className={style.addToCartButtonContainer}>
