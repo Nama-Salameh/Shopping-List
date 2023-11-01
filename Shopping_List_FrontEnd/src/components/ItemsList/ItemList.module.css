@@ -1,0 +1,33 @@
+.itemsListContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 35px;
+  margin: 1.5% 1.5%;
+}
+@media (max-width: 1300px) {
+  .itemsListContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .itemsListContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .itemsListContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .itemsListContainer {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
