@@ -16,21 +16,7 @@ const Item = ({ item }) => {
   };
 
   const handleAddToCartClick = () => {
-    fetch("/api/cart", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(item),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Item added to cart:", data);
-        addItemToCart(item);
-      })
-      .catch((error) => {
-        console.error("Error adding item to cart:", error);
-      });
+    addItemToCart(item);
   };
 
   return (
