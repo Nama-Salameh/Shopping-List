@@ -12,7 +12,10 @@ const Cart = ({ cart }) => {
         <h3>{cart.name}</h3>
         <p>{cart.price}</p>
       </div>
+      <div className={style.deleteButtonContainer}>
+
       <Button className={style.deleteItemButton} onClick={() => removeItemFromCart(cart.id)}>Delete</Button>
+      </div>
     </Paper>
   );
 };
