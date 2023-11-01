@@ -38,5 +38,20 @@
     "itemImage": "assets/OLYMPEA.jpg",
     "itemName": "OLYMPEA",
     "itemPrice": "150"
+  },
+  {
+    "itemImage": "assets/VALENTINO.jpg",
+    "itemName": "VALENTINO",
+    "itemPrice": "350"
+  },
+  {
+    "itemImage": "assets/TUXEDO.jpg",
+    "itemName": "TUXEDO",
+    "itemPrice": "300"
+  },
+  {
+    "itemImage": "assets/J'adore.jpg",
+    "itemName": "J'adore",
+    "itemPrice": "250"
   }
 ]
