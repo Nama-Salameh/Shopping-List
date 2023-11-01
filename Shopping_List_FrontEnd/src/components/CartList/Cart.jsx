@@ -2,6 +2,7 @@ import { Paper , Button} from "@mui/material";
 import style from "./Cart.module.css";
 import {useCart} from './CartContext'
 const Cart = ({ cart }) => {
+  
   const { removeItemFromCart } = useCart();
 
   return (
@@ -11,7 +12,7 @@ const Cart = ({ cart }) => {
         <h3>{cart.name}</h3>
         <p>{cart.price}</p>
       </div>
-      <Button className={style.deleteItemButton}>Delete</Button>
+      <Button className={style.deleteItemButton} onClick={() => removeItemFromCart(cart.id)}>Delete</Button>
     </Paper>
   );
 };

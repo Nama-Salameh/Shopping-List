@@ -21,7 +21,6 @@ async function addToCart(req, res) {
 
 function getCart(req, res) {
   console.log("Start fetching cart items");
-  const db = require("../database");
 
   db.all("SELECT id, image, name, price FROM cart_items", (err, rows) => {
     if (err) {
@@ -32,7 +31,23 @@ function getCart(req, res) {
     console.log("Finished fetching cart items");
   });
 }
+
+const deleteFromCart = (req, res) => {
+  console.log("Start deleting cart items");
+
+  const itemId = req.params.itemId;
+
+  db.run("DELETE FROM cart_items WHERE id = ?", itemId, function (err) {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json({ message: "Deleted", changes: this.changes });
+  });
+};
+
 module.exports = {
   getCart,
   addToCart,
+  deleteFromCart,
 };
