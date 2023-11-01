@@ -1,6 +1,7 @@
 import { Paper , Button} from "@mui/material";
 import style from "./Cart.module.css";
 import {useCart} from '../CartContext'
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 const Cart = ({ cart }) => {
   
   const { removeItemFromCart } = useCart();
@@ -10,7 +11,7 @@ const Cart = ({ cart }) => {
       <img src={cart.image} alt={cart.name} className={style.cartItemImage}/>
       <div className={style.itemInformationContainer}>
         <h3>{cart.name}</h3>
-        <p>{cart.price}</p>
+        <p>{cart.price} <AttachMoneyIcon style={{ verticalAlign: 'middle' }} fontSize="small"/></p>
       </div>
       <div className={style.deleteButtonContainer}>
 

@@ -4,6 +4,7 @@ import Cart from "./Cart/Cart";
 import { Button } from "@mui/material";
 import { useState } from "react";
 import CheckoutDialog from "./CheckoutDialog";
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 
 const CartList = () => {
   const [isOpenCheckoutDialog, setIsOpenCheckoutDialog] = useState(false);
@@ -44,7 +45,7 @@ const CartList = () => {
         return <Cart key={index} cart={cartItem} />;
       })}
       <div className={style.footerContainer}>
-        <h3>Total Amount : {totalAmount} </h3>
+        <h3>Total Amount : {totalAmount} <AttachMoneyIcon style={{ verticalAlign: 'middle' }} fontSize="small"/></h3>
         <Button className={style.checkoutButton} onClick={handlecheckoutClick}>
           Checkout
         </Button>
