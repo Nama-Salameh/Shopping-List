@@ -1,10 +1,12 @@
 import { Grid, Button } from "@mui/material";
 import style from "./Item.module.css";
 import { useState } from "react";
+import { useCart } from "../CartList/CartContext";
 
-const Item = ({item}) => {
+const Item = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const imageUrl = item.image ?? '' ;
+  const imageUrl = item.image ?? "";
+  const { addItemToCart } = useCart();
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -12,27 +14,47 @@ const Item = ({item}) => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  const handleAddToCartClick = () => {
+    fetch("/api/cart", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(item),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Item added to cart:", data);
+        addItemToCart(item);
+      })
+      .catch((error) => {
+        console.error("Error adding item to cart:", error);
+      });
+  };
+
   return (
-      <Grid
-        className={style.itemContainer}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <img
-          src={imageUrl} 
-          alt="Perfume item"
-          className={style.itemImage}
-        />
-        <div className={style.itemInformationContainer}>
-          <h4>{item.name}</h4>
-          <p>{item.price}</p>
-        </div>
-        {isHovered && (
+    <Grid
+      className={style.itemContainer}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <img src={imageUrl} alt={item.name} className={style.itemImage} />
+      <div className={style.itemInformationContainer}>
+        <h4>{item.name}</h4>
+        <p>{item.price}</p>
+      </div>
+      {isHovered && (
         <div className={style.addToCartButtonContainer}>
-          <Button className={style.addToCartButton}> Add to cart</Button>
+          <Button
+            className={style.addToCartButton}
+            onClick={handleAddToCartClick}
+          >
+            Add to cart
+          </Button>
         </div>
       )}
-      </Grid>
+    </Grid>
   );
 };
 
