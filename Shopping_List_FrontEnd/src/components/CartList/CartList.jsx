@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import style from "./CartList.module.css";
 import { useCart } from "./CartContext";
 import Cart from "./Cart";
 
 const CartList = () => {
   const { cartItems } = useCart();
+  let totalAmount = 0;
   if (!cartItems || cartItems.length === 0) {
     return (
       <div>
@@ -12,15 +13,14 @@ const CartList = () => {
       </div>
     );
   }
-  console.log("Cart Contents:", cartItems);
 
   return (
-    <div>
-      <h2>Shopping Cart</h2>
-      {cartItems.map((cartItem, index) => (
-        <Cart key={index} cart={cartItem} />
-      ))}
-      <p>Total Amount : </p>
+    <div className={style.cartListContainer}>
+      {cartItems.map((cartItem, index) => {
+        totalAmount += cartItem.price;
+        return <Cart key={index} cart={cartItem} />;
+      })}
+      <h4>Total Amount : {totalAmount} </h4>
     </div>
   );
 };
