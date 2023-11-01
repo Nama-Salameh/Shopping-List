@@ -10,7 +10,9 @@ const ShoppingListHeader = () => {
   return (
     <div className={style.headerContainer}>
       <div className={style.h1Container}>
-        <img src={logo} className={style.logo} alt="perfumes logo" />
+        <Link to="/">
+          <img src={logo} className={style.logo} alt="perfumes logo" />
+        </Link>
         <h1>Perfumes</h1>
       </div>
       <Link to="/cart">
