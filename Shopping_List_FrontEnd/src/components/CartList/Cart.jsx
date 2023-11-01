@@ -1,0 +1,18 @@
+import { Paper , Button} from "@mui/material";
+import style from "./Cart.module.css";
+import {useCart} from './CartContext'
+const Cart = ({ cart }) => {
+  const { removeItemFromCart } = useCart();
+
+  return (
+    <Paper elevation={3} className={style.cartItemContainer}>
+      <img src={cart.image} alt={cart.name} className={style.cartItemImage}/>
+      <div className={style.itemInformationContainer}>
+        <h3>{cart.name}</h3>
+        <p>{cart.price}</p>
+      </div>
+      <Button className={style.deleteItemButton}>Delete</Button>
+    </Paper>
+  );
+};
+export default Cart;

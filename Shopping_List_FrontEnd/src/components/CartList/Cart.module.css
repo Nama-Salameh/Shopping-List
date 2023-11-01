@@ -1,0 +1,27 @@
+.cartItemContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    position: relative;
+  }
+  
+  .itemInformationContainer {
+    padding: 1%;
+  }
+  
+  .cartItemImage {
+    height: 180px;
+    width: 180px;
+  }
+  
+  .deleteItemButton {
+    background-color: rgb(212, 207, 207) !important;
+    color: black !important;
+    text-transform: none !important;
+    height: fit-content !important;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+  }
+  
