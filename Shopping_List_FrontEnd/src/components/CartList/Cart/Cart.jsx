@@ -1,6 +1,6 @@
 import { Paper , Button} from "@mui/material";
 import style from "./Cart.module.css";
-import {useCart} from './CartContext'
+import {useCart} from '../CartContext'
 const Cart = ({ cart }) => {
   
   const { removeItemFromCart } = useCart();

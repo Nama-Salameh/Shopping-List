@@ -1,6 +1,6 @@
 import style from "./CartList.module.css";
 import { useCart } from "./CartContext";
-import Cart from "./Cart";
+import Cart from "./Cart/Cart";
 import { Button } from "@mui/material";
 import { useState } from "react";
 import CheckoutDialog from "./CheckoutDialog";
