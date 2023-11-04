@@ -1,0 +1,57 @@
+[
+  {
+    "itemImage": "assets/Coco_chanel_women.png",
+    "itemName": "COCO Chanel",
+    "itemPrice": "400"
+  },
+  {
+    "itemImage": "assets/Sauvage.jpg",
+    "itemName": "Sauvage Dior",
+    "itemPrice": "400"
+  },
+  {
+    "itemImage": "assets/coco_chanel.jpg",
+    "itemName": "COCO Chanel",
+    "itemPrice": "400"
+  },
+  {
+    "itemImage": "assets/The_only_one.jpg",
+    "itemName": "The Only One",
+    "itemPrice": "109"
+  },
+  {
+    "itemImage": "assets/YSL.jpg",
+    "itemName": "YSL",
+    "itemPrice": "150"
+  },
+  {
+    "itemImage": "assets/VERSACE.jpg",
+    "itemName": "VERSACE",
+    "itemPrice": "150"
+  },
+  {
+    "itemImage": "assets/GOLDEA.jpg",
+    "itemName": "GOLDEA",
+    "itemPrice": "150"
+  },
+  {
+    "itemImage": "assets/OLYMPEA.jpg",
+    "itemName": "OLYMPEA",
+    "itemPrice": "150"
+  },
+  {
+    "itemImage": "assets/VALENTINO.jpg",
+    "itemName": "VALENTINO",
+    "itemPrice": "350"
+  },
+  {
+    "itemImage": "assets/TUXEDO.jpg",
+    "itemName": "TUXEDO",
+    "itemPrice": "300"
+  },
+  {
+    "itemImage": "assets/J'adore.jpg",
+    "itemName": "J'adore",
+    "itemPrice": "250"
+  }
+]
